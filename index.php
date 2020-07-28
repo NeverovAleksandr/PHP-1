@@ -86,6 +86,8 @@ function multiply($a, $b)
 
 function divide($a, $b)
 {
+    if($b==0)
+		return "на 0 делить нельзя!";
     return $a / $b;
 }
 
