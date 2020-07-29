@@ -1,0 +1,573 @@
+html {
+  font-family: PTSans, Arial, sans-serif;
+  height: 100%;
+  background-image: url(../images/WhiteSi.jpg); 
+  ​​​​​​​background-repeat: no-repeat;
+  background-attachment:fixed;
+ }
+
+body {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;	
+	max-width: 1420px;
+    margin: 0 auto;
+    border: 4px solid RoyalBlue;
+	background-image: url(../images/white-buds.png); 
+    ​​​​​​​background-repeat: no-repeat;
+}
+
+
+header {
+	background: #0000FF; 
+	padding: 10px;
+}
+.container {
+	width: 960px;
+	margin: 20px auto;
+	padding: 0 0 10px 0;	
+	text-align: center;
+	position: relative;
+}
+
+.logo {
+	position: absolute;
+	z-index: 100;
+	left: 0;	
+}
+header h1 {
+	font-size: 2.9em;
+	margin: 0 0 10px 0;
+	color: rgb(255,255,255);
+	font-family: "Arial Black", Arial, Helvetica, sans-serif;
+}
+
+nav {
+	margin-left: 200px;	
+}
+
+nav li {
+	display: inline;
+}
+
+nav a {
+	display: inline-block;
+	text-decoration: none;
+	font-size: 1.2em;
+	color: #ffffff;
+	padding: 10px 20px;
+	background: #1E90FF;
+	border-radius: 5px;
+	border: 2px solid #191970;
+	box-shadow: inset 0px 1px 0px rgba(255,255,255,0.7);
+	text-shadow:
+		0px -1px 1px rgba(000,000,000,0.2),
+		0px 1px 0px rgba(255,255,255,0.3);
+}
+
+/* пользовательские стили  */
+nav a {
+  -webkit-transition: -webkit-transform .5s,
+                      background-color 1s ease-in .5s;
+  transition: transform .5s,
+              background-color 1s ease-in .5s;
+}
+nav a:hover {
+	background-color: Aqua;
+	color: #0000FF;
+  -webkit-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  transform: scale(1.5);
+}
+
+@-webkit-keyframes logo {
+  from {
+    -webkit-transform: rotate(0) scale(.5);
+    left: 120%;
+  }
+  50% {
+    -webkit-transform: rotate(-720deg) scale(.5);
+    left: 0;
+  }
+
+  to {
+    -webkit-transform: rotate(0) scale(1);
+  }
+}
+@keyframes logo {
+  from {
+    transform: rotate(0) scale(.5);
+    left: 120%
+  }
+
+  50% {
+    transform: rotate(-720deg) scale(.5);
+    left: 0;
+  }
+
+  to {
+    transform: rotate(0) scale(1);
+  }
+}
+
+.logo {
+    -webkit-animation: logo 3s;
+    animation: logo 3s;
+}
+main {
+/* 1 flex-grow, 0 flex-shrink, auto flex-basis */
+-webkit-box-flex: 1;
+-ms-flex: 1 0 auto;
+flex: 1 0 auto;
+}
+
+/* **************************** */
+/*  ГЛАВНАЯ СТРАНИЦА index.html */
+/**/
+
+h1 {
+margin-top: 40px;
+margin-bottom: 40px;
+text-transform: uppercase;
+text-align: center;
+}
+
+.capital_welcome {
+color: #000;
+margin-bottom: 30px;
+}
+
+.capital_welcome,
+main article {
+margin-left: 20px;
+margin-right: 20px;
+}
+
+.main_welcome article {
+text-align: center;
+}
+
+/* ************************************ */
+/*    СТРАНИЦА КАТАЛОГА catalog.html    */
+/**/
+
+.catalog_content {
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-ms-flex-wrap: wrap;
+flex-wrap: wrap;
+-ms-flex-pack: distribute;
+justify-content: space-around;
+margin-top: 20px;
+}
+
+.catalog_product figure {
+text-align: center;
+}
+
+.catalog_product img {
+width: 450px;
+box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.22), -10px -10px 25px rgba(0, 0, 0, 0.22);
+margin-bottom: 10px;
+}
+
+.catalog_product img:hover {
+box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.35), -10px -10px 25px rgba(0, 0, 0, 0.35);
+}
+
+.catalog_product figcaption {
+margin-bottom: 30px;
+}
+.catalog_product figcaption a {
+text-decoration: none;
+text-transform: lowercase;
+}
+
+.catalog_product figcaption a:hover {
+color: #fff;
+background: #707070;
+}
+
+
+/**/
+/*     Продукты     */
+/**/
+
+.product {
+margin: 0 auto;
+width: 80%;
+}
+
+.product h3, h4 {
+margin-bottom: 10px;
+font-weight: 400;
+background-color: #eaeaea;
+}
+
+.product h3 {
+font-size: 22px;
+}
+
+.product h4 {
+font-size: 18px;
+margin-top: 20px;
+}
+
+.product p,
+. product ul {
+margin-bottom: 10px;
+
+}
+
+.product_description h3 {
+/*margin-left: 0;*/
+    overflow: hidden;
+    padding-left: 20px;
+}
+
+.product_description p {
+/*background: #707070;*/
+color: #000000;
+font-style: italic;
+margin-bottom: 20px;
+padding: 5px;
+font-size: 14px;
+line-height: 16px;
+}
+.product_description p:last-child {
+    margin-bottom: 20px;
+}
+
+.product_description a {
+/*text-align: center;*/
+/*display: block;*/
+    float: left;
+}
+
+/*.product_description img {*/
+/*    background: #919191; !* Цвет рамки *!*/
+/*    padding: 5px; !* Толщина рамки *!*/
+/*}*/
+.product_description img {
+outline-width: thick;
+outline-style: solid;
+outline-color: #f77812;
+    margin-right: 30px;
+    margin-bottom: 20px;
+}
+.product_description img:hover {
+/*outline-width: thick;*/
+/*outline-style: solid;*/
+/*outline-color: #f77812;*/
+/*width: 400px;*/
+/*height: 400px;*/
+outline-style: none;
+/*outline-width: unset;*/
+}
+/**
+ * Сброс стилей у кнопки.
+ * Чтобы получить нейтральный вид.
+*/
+button {
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    /* отображаем курсор в виде руки при наведении; некоторые
+    считают, что необходимо оставлять стрелочный вид для кнопок */
+    cursor: pointer;
+
+}
+
+/**
+ * Кнопка, стилизация
+ */
+.btn {
+    /* по-умолчанию для <button>, но пригодится для <a> */
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+
+
+    /* создаём маленькие отступы, если кнопки перенесутся на две строки */
+    margin: 2px 0;
+
+    /* невидимая граница (понадобится для цвета при наведении/фокусе) */
+    border: solid 1px transparent;
+    border-radius: 4px;
+
+    /* размер строится из текста и отступов (без width/height) */
+    padding: 20px 60px;
+
+    /* убедитесь, что достаточно контраста! */
+    color: #ffffff;
+    background-color: #10c52c;
+}
+
+/* олдскульный эффект «нажатия» + цветовые правки */
+.btn:active {
+    transform: translateY(1px);
+    filter: saturate(150%);
+}
+
+/* инвертируем цвета при наведении */
+.btn:hover {
+    color: #9050aa;
+    border-color: currentColor;
+    background-color: white;
+}
+
+/* Firefox: сбрасываем внутреннюю границу при фокусе */
+.btn::-moz-focus-inner {
+    border: none;
+}
+
+/* убеждаемся, что есть видимые границы при фокусе */
+.btn:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(255, 105, 180, 0.5),
+    0 0 0 1.5px rgba(255, 105, 180, 0.5);
+}
+
+/* скрываем фокусные стили, если используется не клавиатура */
+.js-focus-visible .btn:focus:not(.focus-visible) {
+    box-shadow: none;
+}
+/* End стилей для кнопки */
+
+.product_feature {
+    clear: both;
+}
+/* Вставка Таблицы*/
+table {
+width: 100%;
+}
+table, th, td {
+border: 1px solid black;
+border-collapse: collapse;
+}
+th, td {
+padding: 3px;
+}
+th {
+background: #707070;
+color: #fff;
+height: 60px;
+}
+.feature_table {
+background: #f77812;
+}
+
+.product_feature ul {
+margin-top: 20px;
+}
+.product_feature li {
+list-style-type: none;
+padding-left: 20px;
+background-image: url('./img/image-bee-110x104.png');
+background-position: top left;
+background-size: 15px;
+background-repeat: no-repeat;
+line-height: 26px;
+font-family: 'Nunito', sans-serif;
+font-weight: 400;
+}
+
+.product_detailed p {
+color: #484343;
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+-ms-text-align-last: right;
+text-align: left;
+
+}
+.product_detailed p::first-letter,
+.product_face p::first-letter {
+font-size: 24px;
+color: #F77812;
+}
+
+.product_face {
+margin-bottom: 40px;
+}
+
+
+/* *********************************** */
+/*   СТРАНИЦА КОНТАКТЫ contacts.html   */
+/**/
+
+#contacts {
+display: flex;
+justify-content: space-around;
+flex-wrap: wrap;
+}
+.contacts_form  {
+width: 600px;
+height: 450px;
+}
+form input,
+select,
+textarea {
+width: 300px;
+height: 20px;
+}
+
+form p {
+margin: 20px;
+}
+
+fieldset {
+margin-bottom: 15px;
+padding: 10px;
+margin: 20px;
+}
+
+legend {
+padding: 0px 3px;
+font-weight: bold;
+font-variant: small-caps;
+}
+
+label {
+width: 110px;
+display: inline-block;
+vertical-align: top;
+margin: 6px;
+}
+
+em {
+font-weight: bold;
+font-style: normal;
+color: #f00;
+}
+
+input:focus,
+input:hover,
+select:focus,
+select:hover,
+textarea:focus,
+textarea:hover {
+background: #eae58f;
+cursor: pointer;
+}
+
+
+input[type="text"]::placeholder,
+input[type="email"]::placeholder {
+color: #ff0000;
+font-size: 12px;
+font-style: italic;
+letter-spacing: 1.3px;
+}
+
+textarea {
+height: 100px;
+}
+
+/* !!!! стилизация плейсхолдера была особенно муторной*/
+textarea::-webkit-input-placeholder {
+color: #ff0000;
+font-size: 12px;
+font-style: italic;
+letter-spacing: 1.3px;
+}
+
+textarea::-moz-placeholder {
+color: #ff0000;
+font-size: 12px;
+font-style: italic;
+letter-spacing: 1.3px;
+}
+
+/* Firefox 19+ */
+textarea:-moz-placeholder {
+color: #ff0000;
+font-size: 12px;
+font-style: italic;
+letter-spacing: 1.3px;
+}
+
+/* Firefox 18- */
+textarea:-ms-input-placeholder {
+color: #ff0000;
+font-size: 12px;
+font-style: italic;
+letter-spacing: 1.3px;
+}
+
+
+input[type=checkbox] {
+width: 10px;
+}
+
+.form_button {
+display: flex;
+justify-content: space-between;
+}
+input[type=text]  {
+text-transform: capitalize;
+}
+textarea[type=text]:first-letter {
+text-transform:capitalize ;
+}
+/*input[type="text"]:focus,*/
+/*textarea[type="text"]:focus {*/
+/*    text-transform: capitalize;*/
+/*}*/
+input[type=email]:focus {
+background-color: gray;
+color: #fff;
+
+}
+
+input[type=email]:invalid {
+background-color: #ff0000;
+}
+
+input[type=submit],
+input[type=reset] {
+width: 200px;
+padding: 10px;
+height: 40px;
+}
+.contact_address h3 {
+padding-left: 20px;
+margin-top: 20px;
+margin-bottom: 24px;
+
+}
+
+iframe {
+margin-left: 20px;
+margin-bottom: 20px;
+box-shadow: 1px 1px 25px rgba(0,0,0,0.3);
+    width: 100%;
+    height: 374px;
+}
+
+.contact_address p {
+margin-left: 20px;
+margin-top: 20px;
+margin-bottom: 40px;
+}
+
+/* *********** */
+/* ФУТЕР САЙТА */
+/**/
+
+footer {
+    margin-top: 20px;
+    background-color: #0000FF;
+    border-bottom: 1px solid #05435e;
+    color: #fff;
+    padding: 25px 0;
+    text-align: center;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+

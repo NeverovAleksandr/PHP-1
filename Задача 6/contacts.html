@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>eShop</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+<header>
+
+<section class="header container">
+<img src="images/face-mask.png" class="logo" width="101" height="101" alt="Логотип">
+<h1><strong> Учебный сайт магазина.</strong></h1>
+<nav>
+	<ul>
+		<li><a href="index.html">Главная</a></li>
+		<li><a href="./Catalog/catalog.html">Каталог</a></li>
+		<li><a href="contacts.html">Контакты</a></li>
+	</ul>
+</nav>
+</section>
+</header>
+<h1 class="head_content container">Контакты</h1>
+<main id="contacts" class="container">
+    <form id="contacts_form" action="#">
+        <p><i>Пожалуйста, заполните форму. Обязательные поля помечены </i><em>*</em></p>
+        <fieldset style="position: relative";
+}">
+            <legend>Контактная информация</legend>
+            <label for="name">Имя <em>*</em></label>
+            <input type="text" id="name" placeholder="Александер"><br>
+            <label for="telephone">Телефон</label>
+            <input id="telephone"><br>
+
+            <label for="email">Email <em>*</em></label>
+            <input type="email" id="email" placeholder="my@email.com"><br>
+        </fieldset>
+        <fieldset>
+            <legend>Персональная информация</legend>
+            <label for="age">Возраст<em>*</em></label>
+            <input id="age"><br>
+            <label for="gender">Пол</label>
+            <select id="gender">
+                <option value="female">Женщина</option>
+                <option value="male" selected>Мужчина</option>
+            </select><br>
+            <label for="comments">Введите текст</label>
+            <textarea type="text" id="comments" placeholder="Введите ваш текст здесь."></textarea>
+        </fieldset>
+        <fieldset>
+            <legend>Выберите ваши примеры</legend>
+            <label for="one"><input id="one" type="checkbox"> Первый</label>
+            <label for="two"><input id="two" type="checkbox"> Второй</label>
+            <label for="three"><input id="three" type="checkbox" checked> Третий</label>
+            <label for="four"><input id="four" type="checkbox"> Четвертый</label>
+        </fieldset>
+        <div class="form_button">
+            <p><input type="submit" value="Отправить информацию"></p>
+            <p><input type="reset" value="Очистить форму"></p>
+        </div>
+
+    </form>
+    <div class="contact_address">
+        <map name="#">
+            <h3 class="address_title">Найди наш магазин на Яндекс-карте</h3>
+            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A3d34556a2b939b08c109ef6405c0abd3155eaf2a2eb9e087b8bf3efb5d1997db&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
+        </map>
+        <p>Адрес магазина: <span>Бузулук, Улица 1 линия, дом 1</span></p>
+    </div>
+</main>
+
+	<footer>
+	 	<p class=""><a href="https://geekbrains.ru/study_groups/12101/homeworks/70211">GeekBrains. HTML/CSS.
+		 Интерактивный курс.</a>&nbsp;&copy;2020 &nbsp;<span>Все права защищены</span></p>
+	</footer>
+
+
+</body>
+</html>

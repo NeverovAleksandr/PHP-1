@@ -297,6 +297,3 @@ function translit_and_space($text)
 
 echo translit_and_space('Привет, GeekBrains! Да здравствует PHP.');
 ?>
-
-
-
